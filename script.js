@@ -54,33 +54,15 @@ let word = 'rockstar'
 //console.log (word.split('').reverse().join(''));
 
 //7.) 
-/*
-Exercise 7: checkPalindrome()
+const checkPalindrom = function (str) { 
+  console.log(str)
+  return false 
+}
 
-Define a function called checkPalindrome. It should take a string and return true if the string is a palindrome (reads the same forwards and backwards) and false otherwise.
+console.log('Exercise 7 Result:', checkPalindrom(""));
 
-Example: checkPalindrome('radar') should return true.
-Example: checkPalindrome('taco') should return false.
-
-Complete the exercise in the space below:
-*/
-//const checkPalindrom = function (str) {
-
-//}
-//console.log('Exercise 7 Result:', checkPalindrom(""));
 
 //8.)
-
-/*
-Exercise 8: maxOfThree()
-
-Define a function, maxOfThree. It should accept three numbers and return the largest among them.
-
-Example: maxOfThree(17, 4, 9) should return 17.
-
-Complete the exercise in the space below:
-*/
-
 const maxOfThree = maxVal(num1, num2, num3)
 let maxVal = 0 
 if (num1 > num2) {
@@ -97,7 +79,6 @@ if (num1 > num2) {
 
 
   //9.) 
-
   /*
 Exercise 9: calculateTip()
 
@@ -111,8 +92,15 @@ const calculateTip = (num1 * num2) {
     let calculateTip = (num1 * num2)
     
         console.log(calculateTip)
-
 }
-
-
 console.log('Exercise 9 Result:', calculateTip(50, 20));
+
+//10.)
+const convertTemperature = function(temp, scale) {
+    if (scale === 'c') {
+      temp = `${(temp * 1.8) +32 (Fahrenheit)}`
+        } else {
+      temp =  `${5/9 * (temp - 32) (Celsius)}`
+    } return temp
+}
+console.log('Exercise 10 Result:', convertTemperature(4, "C"));
